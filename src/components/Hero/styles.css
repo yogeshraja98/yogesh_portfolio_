@@ -1,0 +1,80 @@
+/* Container styles */
+#home {
+  padding-top: 15%;
+  display: flex;
+  justify-content: space-between;
+  gap: 8rem;
+  background: rgba(0, 0, 0, 0);
+}
+
+.hero-text>p {
+  font-size: 1.8rem;
+}
+
+.hero-text h1 {
+  font-size: 7rem;
+}
+
+.hero-text h3 {
+  color: var(--green);
+  margin: 1rem 0;
+}
+
+.hero-text p.small-resume {
+  margin-bottom: 5rem;
+}
+
+/* Social media styles */
+.social-media {
+  display: inline-flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  padding-top: 5rem;
+  padding-left: 1rem;
+}
+
+.social-media img,
+.social-media span {
+  font-size: 3rem;
+  width: 3.5rem;
+}
+
+/* Button styles */
+.button {
+  margin-top: 5rem;
+  padding: 1.4rem 6rem;
+}
+
+/* Hero image styles */
+.hero-image img {
+  max-width: 500px;
+}
+
+/* Responsive styles */
+@media (max-width: 960px) {
+  #home {
+    display: block;
+    margin-top: 15%;
+  }
+
+  .hero-text h1 {
+    font-size: 5rem;
+  }
+
+  .hero-image {
+    display: none;
+  }
+}
+
+@media (max-width: 600px) {
+  #home {
+    margin-top: 35%;
+  }
+}
+
+@media (max-width: 480px) {
+  #home {
+    margin-top: 45%;
+  }
+}

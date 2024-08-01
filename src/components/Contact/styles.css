@@ -1,0 +1,71 @@
+/* Container styles */
+#contact {
+  margin-top: 10rem;
+}
+
+/* Header styles */
+#contact header {
+  text-align: center;
+}
+
+#contact header h2 {
+  text-align: center;
+  font-size: 4rem;
+}
+
+#contact header p {
+  color: var(--green);
+  font-weight: 500;
+}
+
+/* Contacts section styles */
+.contacts {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  place-items: center;
+  margin-top: 1.5rem;
+}
+
+.contacts div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50%;
+  max-width: 30rem;
+  gap: 2rem;
+  background-color: var(--green);
+  border-radius: 1.4rem;
+  padding: 1.6rem 2.8rem;
+  transition: background-color 0.25s;
+}
+
+.contacts div img {
+  width: 4rem;
+}
+
+.contacts div a {
+  color: var(--black);
+  font-weight: 500;
+}
+
+/* Hover effect */
+.contacts div:hover {
+  background-color: var(--pink);
+}
+
+.contacts div:hover a {
+  color: #FFF;
+}
+
+/* Responsive styles */
+@media (max-width: 960px) {
+  .contacts {
+    flex-direction: column;
+  }
+
+  .contacts div {
+    width: 100%;
+  }
+}
