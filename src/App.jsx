@@ -12,21 +12,21 @@ import LandingPage from './components/Landingpage/landing_page'
 
 function App() {
   return (
-    // <>
-    //   <GlobalStyle></GlobalStyle>
-    //   <Header></Header>
-    //   <Main></Main>
-    //   <Footer></Footer>
-    // </>
     <>
-
-      <BrowserRouter>
-        <Routes>
-          <Route path="/" element={<LandingPage />} />
-          <Route path="redux" element={<ReactReduxPage />} />
-        </Routes>
-      </BrowserRouter>
+      <GlobalStyle></GlobalStyle>
+      <Header></Header>
+      <Main></Main>
+      <Footer></Footer>
     </>
+    //  <>
+
+    //  <BrowserRouter>
+    //     <Routes>
+    //       <Route path="/" element={<LandingPage />} />
+    //       <Route path="redux" element={<ReactReduxPage />} />
+    //     </Routes>
+    //   </BrowserRouter> 
+    //  </>
   )
 }
 

@@ -8,25 +8,30 @@ import ScrollAnimation from "react-animate-on-scroll";
 export function Project() {
   return (
     <Container id="project">
-      <h2>My Projects</h2>
+      <h2>My Blogs</h2>
       <div className="projects">
 
         <ScrollAnimation animateIn="flipInX">
           <div className="project">
+            {/* <a href="https://www.blogs.yogeshrajadev.com" target="_blank" rel="noreferrer"> */}
             <header>
               <svg width="50" xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 24 24" fill="none" stroke="#23ce6b" strokeWidth="1" strokeLinecap="round" strokeLinejoin="round"> <title>Folder</title> <path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"></path> </svg>
               <div className="project-links">
-                <a href="" target="_blank" rel="noreferrer">
-                  <img src={githubIcon} alt="Visit site" /></a>
-                <a href="" target="_blank" rel="noreferrer">
+                {/* <a href="https://www.blogs.yogeshrajadev.com" target="_blank" rel="noreferrer">
+                  <img src={githubIcon} alt="Visit site" /></a> */}
+                <a href="https://www.blogs.yogeshrajadev.com" target="_blank" rel="noreferrer">
                   <img src={externalLink} alt="Visit site" />
-                </a> </div>
+                </a>
+
+              </div>
             </header>
             <div className="body">
-              <h3>Serverless Voting Application for Programming Languages</h3>
-              <p> Developed a serverless voting app using React, AWS Lambda, API Gateway, and DynamoDB, enabling users to view programming languages, cast votes, and access details through an interactive UI, leveraging serverless architecture for scalability and cost-efficiency. </p>
+              <h3>Integrate Redux with React Based Application</h3>
+              <p> This article discuss about how to configure the React Redux in our React Js application, a Step by step guide with for API integration. </p>
             </div>
-            <footer> <ul className="tech-list"> <li>AWS Lambda</li> <li>API Gateway</li> <li>DynamoDB</li> </ul> </footer>
+            <footer> <ul className="tech-list"> <li>Redux</li> <li>Axios</li> <li>Thunk</li><li>Store</li> </ul> </footer>
+            {/* </a> */}
+
           </div>
         </ScrollAnimation>
 
@@ -35,23 +40,24 @@ export function Project() {
             <header>
               <svg width="50" xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 24 24" fill="none" stroke="#23ce6b " strokeWidth="1" strokeLinecap="round" strokeLinejoin="round"><title>Folder</title> <path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"></path> </svg>
               <div className="project-links">
-                <a href="" target="_blank" rel="noreferrer">
-                  <img src={githubIcon} alt="Visit site" /> </a>
+                {/* <a href="" target="_blank" rel="noreferrer">
+                  <img src={githubIcon} alt="Visit site" /> </a> */}
                 <a href="https://ai-chatbot-t8fn.onrender.com" target="_blank" rel="noreferrer">
                   <img src={externalLink} alt="Visit site" /></a>
               </div>
             </header>
             <div className="body">
-              <h3>GeniusBot: AI-Powered Assistance with PDF Insight</h3>
+              <h3>Create a new Node JS Project and handling the Client HTTP request</h3>
               <p>
-                Developed an interactive chatbot application using Streamlit, OpenAI's GPT-3.5-turbo language model, and PyPDF2 for PDF text extraction, enabling users to ask context-based questions on uploaded PDFs and general queries.
+                This document had the steps about how to create a new Node Js project and basic setup for handling Client send HTTP.
               </p>
             </div>
             <footer>
               <ul className="tech-list">
-                <li>Streamlit</li>
-                <li>PyPDF2</li>
-                <li>LangChain</li>
+                <li>Node JS</li>
+                <li>Express</li>
+                <li>Database</li>
+                <li>Connection</li>
               </ul>
             </footer>
           </div>
