@@ -1,28 +1,39 @@
-import { Container } from "./styles";
-import githubIcon from "../../assets/github.svg"
+// import { Container } from "./styles";
+import githubIcon from "../../assets/github.svg";
 // import DownloadApp from '../../assets/download.png'
-import externalLink from "../../assets/external-link.svg"
+import externalLink from "../../assets/external-link.svg";
 import ScrollAnimation from "react-animate-on-scroll";
-
+import nodeJsDocument from '../../assets/Node JS - Project creation and basic setup for handling Client requests.pdf';
+import './styles.css';
 
 export function Project() {
+
+  const reduxPageNavigation = () => {
+    window.open('https://www.blogs.yogeshrajadev.com/', '_blank');
+  }
+
+  const downloadNodeJSDocument = () => {
+    const link = document.createElement('a');
+    link.href = nodeJsDocument;
+    link.download = 'Node JS - Project creation and basic setup for handling Client requests.pdf'; // The filename that the user will get
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  };
+
   return (
-    <Container id="project">
+    <section className="container" id="project">
       <h2>My Blogs</h2>
       <div className="projects">
 
         <ScrollAnimation animateIn="flipInX">
-          <div className="project">
-            {/* <a href="https://www.blogs.yogeshrajadev.com" target="_blank" rel="noreferrer"> */}
+          <div className="project" onClick={reduxPageNavigation}>
             <header>
               <svg width="50" xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 24 24" fill="none" stroke="#23ce6b" strokeWidth="1" strokeLinecap="round" strokeLinejoin="round"> <title>Folder</title> <path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"></path> </svg>
               <div className="project-links">
-                {/* <a href="https://www.blogs.yogeshrajadev.com" target="_blank" rel="noreferrer">
-                  <img src={githubIcon} alt="Visit site" /></a> */}
                 <a href="https://www.blogs.yogeshrajadev.com" target="_blank" rel="noreferrer">
                   <img src={externalLink} alt="Visit site" />
                 </a>
-
               </div>
             </header>
             <div className="body">
@@ -30,18 +41,14 @@ export function Project() {
               <p> This article discuss about how to configure the React Redux in our React Js application, a Step by step guide with for API integration. </p>
             </div>
             <footer> <ul className="tech-list"> <li>Redux</li> <li>Axios</li> <li>Thunk</li><li>Store</li> </ul> </footer>
-            {/* </a> */}
-
           </div>
         </ScrollAnimation>
 
         <ScrollAnimation animateIn="flipInX">
-          <div className="project">
+          <div className="project" onClick={downloadNodeJSDocument}>
             <header>
               <svg width="50" xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 24 24" fill="none" stroke="#23ce6b " strokeWidth="1" strokeLinecap="round" strokeLinejoin="round"><title>Folder</title> <path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"></path> </svg>
               <div className="project-links">
-                {/* <a href="" target="_blank" rel="noreferrer">
-                  <img src={githubIcon} alt="Visit site" /> </a> */}
                 <a href="https://ai-chatbot-t8fn.onrender.com" target="_blank" rel="noreferrer">
                   <img src={externalLink} alt="Visit site" /></a>
               </div>
@@ -328,6 +335,6 @@ export function Project() {
           </ScrollAnimation> */}
 
       </div>
-    </Container>
+    </section>
   );
 }

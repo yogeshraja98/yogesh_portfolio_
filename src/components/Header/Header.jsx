@@ -2,7 +2,7 @@ import { BrowserRouter as Router } from 'react-router-dom';
 import { NavHashLink, HashLink } from 'react-router-hash-link';
 import { useState } from 'react';
 import './styles.css';
-// import Resume from './';
+import Resume from '../../assets/resumes/Yogeshraja- Web developer.pdf';
 
 export function Header() {
   const [isActive, setActive] = useState(false)
@@ -41,9 +41,9 @@ export function Header() {
           <NavHashLink smooth to="#contact" onClick={closeMenu}>
             Contact
           </NavHashLink>
-          {/* <a href={Resume} download className="button resume-download">
+          <a href={Resume} download className="button resume-download">
             Resume
-          </a> */}
+          </a>
         </nav>
         <div
           aria-expanded={isActive ? 'true' : 'false'}

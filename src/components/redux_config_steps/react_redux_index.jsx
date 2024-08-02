@@ -48,7 +48,7 @@ const ReactReduxPage = () => {
                                     <div className="reduxWing4">
                                         <span>5 min read</span>&nbsp;
                                         <span> . </span>&nbsp;
-                                        <span className="reduxWing4x">Posted on June 2024</span>
+                                        <span className="reduxWing4x">Posted on Apr 2024</span>
                                     </div>
                                 </div>
                             </div>

@@ -33,7 +33,7 @@ export function Footer() {
           {/* <span>❤️</span> */}
         </p>
       </div>
-      <div className="social-media">
+      <div className="social-media" style={{ paddingTop: 0 }}>
         <a
           href="https://www.linkedin.com/in/yogesh-raja"
           target="_blank"

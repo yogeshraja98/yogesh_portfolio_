@@ -1,11 +1,11 @@
 /* Footer container styles */
 footer {
   background-color: #2b2b2b;
-  padding: 3rem 15rem;
+  padding: 3rem 2rem;
   margin-top: 10rem;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 
 /* Logo styles */
