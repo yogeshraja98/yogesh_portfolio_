@@ -6,7 +6,7 @@ import validator from 'validator'
 import './styles.css'
 
 export function Form() {
-  const [state, handleSubmit] = useForm('xknkpqry')
+  const [state, handleSubmit] = useForm('Submit')
   const [validEmail, setValidEmail] = useState(false)
   const [isHuman, setIsHuman] = useState(false)
   const [message, setMessage] = useState('')
