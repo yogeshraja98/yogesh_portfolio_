@@ -17,14 +17,14 @@ export function Hero() {
         <ScrollAnimation animateIn="fadeInUp">
           <p>Hello <img src={Hello} alt="Hello" width="20px" />, I'm</p>
         </ScrollAnimation>
-        <ScrollAnimation animateIn="fadeInUp" delay={0.2 * 1000}>
+        <ScrollAnimation animateIn="fadeInUp" delay={0.4 * 1000}>
           <h1>Yogesh Raja</h1>
         </ScrollAnimation>
-        <ScrollAnimation animateIn="fadeInUp" delay={0.4 * 1000}>
-          <h3>Front-end Developer</h3>
+        <ScrollAnimation animateIn="fadeInUp" delay={0.6 * 1000}>
+          <h3>Full-stack Developer</h3>
         </ScrollAnimation>
         <ScrollAnimation animateIn="fadeInUp" delay={0.6 * 1000}>
-          <p className="small-resume">2 Years of Experience</p>
+          <p className="small-resume">2+ Years of Experience</p>
         </ScrollAnimation>
         <ScrollAnimation animateIn="fadeInUp" delay={0.8 * 1000}>
           <BrowserRouter>
