@@ -1,0 +1,120 @@
+:root {
+  --pink: #e31f71;
+  --black: #212121;
+  --green: #23ce6b;
+  --blue: #016fb9;
+  scroll-padding-top: 10rem;
+}
+
+:root.light body {
+  transition: 0.5s;
+  background-color: #f5f5f5;
+  color: var(--black);
+}
+
+:root.light .logo {
+  color: var(--black);
+}
+
+:root.light header.header-fixed {
+  transition: 0.5s;
+  background-color: #f5f5f550;
+}
+
+:root.light header.header-fixed a {
+  transition: 0.5s;
+  color: black;
+}
+
+:root.light header.header-fixed .menu,
+:root.light header.header-fixed .menu:before,
+:root.light header.header-fixed .menu:after {
+  background-color: var(--black);
+}
+
+:root.light header.header-fixed .menu.active {
+  background-color: rgba(555, 555, 555, 0);
+}
+
+:root.light footer.footer {
+  transition: 0.5s;
+  background-color: rgba(0, 0, 0, 0.1);
+  color: var(--black);
+}
+
+:root.light form input,
+:root.light form textarea {
+  transition: 0.5s;
+  border: solid 1px var(--black);
+  color: var(--black);
+}
+
+:root.light form input::placeholder,
+:root.light form textarea::placeholder {
+  transition: 0.5s;
+  color: var(--black);
+}
+
+ul,
+li {
+  text-decoration: none;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.6rem;
+  -webkit-font-smoothing: antialiased;
+  background-color: var(--black);
+  color: #ffff;
+}
+
+body,
+input,
+textarea,
+button {
+  font-family: 'Red Hat Display', sans-serif;
+  font-weight: 400;
+}
+
+a {
+  text-decoration: none;
+}
+
+button,
+.button {
+  border: none;
+  cursor: pointer;
+  background-color: var(--green);
+  color: #ffff;
+  border-radius: 2rem;
+  font-weight: 500;
+  transition: filter 0.25s;
+}
+
+button:hover,
+.button:hover {
+  filter: brightness(0.8);
+}
+
+button:disabled,
+.button:disabled {
+  filter: brightness(0.8);
+  cursor: not-allowed;
+}
+
+.logo {
+  font-size: 3rem;
+  color: #ffff;
+}
